@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Care | Home Nursing Services Bhubaneswar</title>
+    <!-- Tailwind CSS for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#D32F2F', // Matched to the red in the flyer
+                        brandOrange: '#FF9800', // Matched to the logo hands
+                        brandBlue: '#0D47A1', // Professional medical blue
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            /* Using the image of the nurse feeding the patient */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('input_file_2.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 smooth-scroll">
+
+    <!-- Top Bar (Contact Info) -->
+    <div class="bg-brandBlue text-white py-2 text-sm hidden md:block">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <p><i class="fas fa-map-marker-alt mr-2"></i> Plot No-1611, Gangapada, Janla, Bhubaneswar</p>
+            <div class="flex space-x-4">
+                <a href="tel:+919583604949" class="hover:text-brandOrange"><i class="fas fa-phone-alt mr-2"></i> 9583604949</a>
+                <a href="mailto:info@lifecarehomenursing.com" class="hover:text-brandOrange"><i class="fas fa-envelope mr-2"></i> Get Support</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo Section -->
+            <a href="#" class="flex items-center space-x-2">
+                <div class="text-3xl font-bold text-brandRed">Life<span class="text-brandBlue">Care</span></div>
+                <i class="fas fa-heartbeat text-3xl text-brandOrange"></i>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-brandRed font-medium">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-brandRed font-medium">About</a>
+                <a href="#services" class="text-gray-800 hover:text-brandRed font-medium">Services</a>
+                <a href="#testimonials" class="text-gray-800 hover:text-brandRed font-medium">Testimonials</a>
+                <a href="#gallery" class="text-gray-800 hover:text-brandRed font-medium">Gallery</a>
+                <a href="#contact" class="bg-brandRed text-white px-5 py-2 rounded-full font-medium hover:bg-red-700 transition">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-3">
+            <a href="#home" class="block text-gray-800 hover:text-brandRed">Home</a>
+            <a href="#about" class="block text-gray-800 hover:text-brandRed">About</a>
+            <a href="#services" class="block text-gray-800 hover:text-brandRed">Services</a>
+            <a href="#testimonials" class="block text-gray-800 hover:text-brandRed">Testimonials</a>
+            <a href="#gallery" class="block text-gray-800 hover:text-brandRed">Gallery</a>
+            <a href="#contact" class="block text-brandRed font-bold">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-[80vh] flex items-center justify-center text-center px-4">
+        <div class="max-w-3xl text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Professional Home Nursing Services</h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">Compassionate care for your loved ones at the comfort of your home. From elderly care to medical procedures, we are here to help.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="tel:+919583604949" class="bg-brandOrange text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-orange-600 transition shadow-lg">
+                    <i class="fas fa-phone-alt mr-2"></i> Call 9583604949
+                </a>
+                <a href="https://wa.me/919583604949" class="bg-green-500 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-green-600 transition shadow-lg">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="input_file_1.jpeg" alt="Life Care Flyer" class="rounded-xl shadow-2xl w-full border-4 border-white">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brandBlue mb-4">Why Choose Life Care?</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We provide dedicated home nursing services ensuring your family members get the best medical attention and personal care. Our staff is trained, experienced, and compassionate.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-brandRed mr-3"></i> 24/7 Home Nursing Support</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-brandRed mr-3"></i> Trained & Verified Staff</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-brandRed mr-3"></i> Affordable Care Plans</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-brandRed mr-3"></i> Located in Janla, Bhubaneswar</li>
+                    </ul>
+                    <div class="mt-8">
+                        <a href="#services" class="text-brandRed font-semibold hover:underline">View All Services &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-brandBlue mb-2">Our Services</h2>
+            <p class="text-gray-500 mb-12">We Provide Comprehensive Care Solutions</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition border-b-4 border-brandRed group">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brandRed transition">
+                        <i class="fas fa-user-nurse text-2xl text-brandRed group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Home Nurse</h3>
+                    <p class="text-gray-600 text-sm">Professional nurses for post-operative care, medication management, and monitoring vitals.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition border-b-4 border-brandOrange group">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brandOrange transition">
+                        <i class="fas fa-wheelchair text-2xl text-brandOrange group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Patient Care Attendant</h3>
+                    <p class="text-gray-600 text-sm">Assistance with daily living activities, hygiene, mobility, and feeding for recovering patients.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition border-b-4 border-brandBlue group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brandBlue transition">
+                        <i class="fas fa-baby text-2xl text-brandBlue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Baby Care Attendant</h3>
+                    <p class="text-gray-600 text-sm">Specialized care for newborns and infants, ensuring their safety, feeding, and hygiene.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition border-b-4 border-brandRed group">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brandRed transition">
+                        <i class="fas fa-hands-helping text-2xl text-brandRed group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Old Age Care</h3>
+                    <p class="text-gray-600 text-sm">Companionship and medical assistance for seniors to live comfortably at home.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition border-b-4 border-brandOrange group">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brandOrange transition">
+                        <i class="fas fa-heart text-2xl text-brandOrange group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Palliative Care</h3>
+                    <p class="text-gray-600 text-sm">Compassionate care focusing on providing relief from symptoms and stress of serious illness.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition border-b-4 border-brandBlue group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brandBlue transition">
+                        <i class="fas fa-syringe text-2xl text-brandBlue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Medical Procedures</h3>
+                    <p class="text-gray-600 text-sm">Injection, Suction, Nebulization, First Aid & Home Blood Collection services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-brandBlue">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">What Families Say</h2>
+                <p class="text-blue-200">Trusted by families across Bhubaneswar</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg relative">
+                    <i class="fas fa-quote-left text-4xl text-brandOrange opacity-20 absolute top-4 left-4"></i>
+                    <p class="text-gray-600 italic mb-6 relative z-10 pt-4">"My father required 24/7 monitoring after his surgery. The nurse from Life Care was exceptional—punctual, knowledgeable, and deeply compassionate. I highly recommend their services to anyone in Bhubaneswar."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-brandRed rounded-full flex items-center justify-center text-white font-bold text-sm">SM</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold text-gray-900">Suresh Mishra</h4>
+                            <p class="text-xs text-gray-500">Bhubaneswar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg relative">
+                    <i class="fas fa-quote-left text-4xl text-brandOrange opacity-20 absolute top-4 left-4"></i>
+                    <p class="text-gray-600 italic mb-6 relative z-10 pt-4">"Finding reliable help for my bedridden grandmother was a challenge until we found Life Care. Their attendant is not just a helper but a companion to her. The peace of mind they provide is priceless."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-brandBlue rounded-full flex items-center justify-center text-white font-bold text-sm">AP</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold text-gray-900">Anjali Patnaik</h4>
+                            <p class="text-xs text-gray-500">Khandagiri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg relative">
+                    <i class="fas fa-quote-left text-4xl text-brandOrange opacity-20 absolute top-4 left-4"></i>
+                    <p class="text-gray-600 italic mb-6 relative z-10 pt-4">"We hired a baby care attendant for our 3-month-old. She was well-trained and maintained high hygiene standards. It made my return to work so much smoother. Thank you, Life Care!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-brandOrange rounded-full flex items-center justify-center text-white font-bold text-sm">RS</div>
+                        <div class="ml-3">
+                            <h4 class="font-bold text-gray-900">Rakesh Singh</h4>
+                            <p class="text-xs text-gray-500">Janla</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPDATED FLEXIBLE GALLERY SECTION -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-brandBlue mb-4">Moments of Care</h2>
+            <p class="text-gray-500 mb-10">Glimpses of our compassionate service.</p>
+            
+            <!-- FLEXIBLE GRID: Add as many photos as you want here -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 📷 PHOTO BLOCK START (Copy this block to add more) -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-72">
+                    <img src="input_file_2.jpeg" alt="Service Photo" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
+                        <p class="text-white font-semibold">Feeding Assistance</p>
+                    </div>
+                </div>
+                <!-- 📷 PHOTO BLOCK END -->
+
+                <!-- 📷 PHOTO BLOCK START -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-72">
+                    <img src="input_file_3.jpeg" alt="Service Photo" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
+                        <p class="text-white font-semibold">Elderly Care</p>
+                    </div>
+                </div>
+                <!-- 📷 PHOTO BLOCK END -->
+
+                <!-- 📷 PHOTO BLOCK START -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-72">
+                    <img src="input_file_5.jpeg" alt="Service Photo" class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
+                        <p class="text-white font-semibold">Our Dedicated Staff</p>
+                    </div>
+                </div>
+                <!-- 📷 PHOTO BLOCK END -->
+
+                <!-- Add new photo blocks here... -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-brandBlue mb-4">📞 Reach Out for Compassionate Care</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We are here to listen, support, and provide the professional help your family deserves.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                
+                <!-- Left Column: Direct Info & Hub -->
+                <div class="lg:w-1/2 space-y-8">
+                    
+                    <!-- Direct Contact Info -->
+                    <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-brandOrange shadow-sm">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Direct Contact Info 🏥</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-brandRed rounded-full flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 font-bold uppercase">Call Us Anytime</p>
+                                    <a href="tel:+919583604949" class="text-xl font-bold text-brandBlue hover:text-brandRed">9583604949</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-brandBlue rounded-full flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 font-bold uppercase">Email Us</p>
+                                    <a href="mailto:info@lifecarehomenursing.com" class="text-lg font-medium text-gray-800 hover:text-brandRed">info@lifecarehomenursing.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500 font-bold uppercase">Office Hours</p>
+                                    <p class="text-gray-800">Available 24/7 for nursing support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visit Our Hub -->
+                    <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-brandBlue shadow-sm">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Visit Our Hub 📍</h3>
+                        <div class="mb-4">
+                            <p class="font-bold text-gray-900">Address:</p>
+                            <p class="text-gray-700">Plot No-1611, Gangapada, Janla, Bhubaneswar.</p>
+                        </div>
+                        <div class="mb-4">
+                            <p class="font-bold text-gray-900">Landmark:</p>
+                            <p class="text-gray-700">Near Janla, serving the greater Bhubaneswar area.</p>
+                        </div>
+                        
+                        <!-- Embedded Map -->
+                        <div class="w-full h-48 bg-gray-200 rounded-lg overflow-hidden mt-4">
+                           <iframe 
+                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14976.24155124976!2d85.7330543!3d20.2146445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a900350d268b%3A0xc3a42d0b50302b11!2sGangapada%2C%20Odisha!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                               width="100%" 
+                               height="100%" 
+                               style="border:0;" 
+                               allowfullscreen="" 
+                               loading="lazy" 
+                               referrerpolicy="no-referrer-when-downgrade">
+                           </iframe>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/919583604949" class="block w-full bg-green-500 text-white text-center py-4 rounded-xl font-bold text-xl hover:bg-green-600 transition shadow-lg transform hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-2xl mr-2"></i> Chat with Us on WhatsApp
+                    </a>
+
+                </div>
+
+                <!-- Right Column: Request Callback Form -->
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border border-gray-100 h-full">
+                        <h3 class="text-2xl font-bold text-brandBlue mb-2">Request a Callback</h3>
+                        <p class="text-gray-500 mb-6">Families often prefer a quick call. This simple form will let them leave their details so you can follow up.</p>
+                        
+                        <form action="mailto:info@lifecarehomenursing.com" method="post" enctype="text/plain" class="space-y-5">
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">Full Name</label>
+                                <input type="text" name="Name" placeholder="Enter your full name" class="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue transition">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">Phone Number</label>
+                                <input type="tel" name="Phone" placeholder="Enter your mobile number" class="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue transition">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">Service Needed</label>
+                                <div class="relative">
+                                    <select name="Service" class="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue appearance-none">
+                                        <option>Home Nurse</option>
+                                        <option>Patient Care Attendant</option>
+                                        <option>Baby Care Attendant</option>
+                                        <option>Old Age Care</option>
+                                        <option>Palliative Care</option>
+                                        <option>Other (Injection, Suction, etc.)</option>
+                                    </select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">Message</label>
+                                <textarea name="Message" rows="4" placeholder="Tell us a bit about your loved one's needs..." class="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-brandBlue focus:ring-1 focus:ring-brandBlue transition"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-brandRed text-white font-bold py-4 rounded-lg hover:bg-red-700 transition shadow-lg mt-2">
+                                Send Request <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <h2 class="text-2xl font-bold text-white">Life<span class="text-brandOrange">Care</span></h2>
+                <p class="text-gray-400 text-sm mt-1">Home Nursing Services</p>
+            </div>
+            <div class="text-sm text-gray-500 text-center md:text-right">
+                <p>&copy; 2024 Life Care Home Nursing. All rights reserved.</p>
+                <p>Plot No-1611, Gangapada, Janla, Bhubaneswar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for Mobile Menu -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
